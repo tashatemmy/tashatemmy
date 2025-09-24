@@ -1,3 +1,11 @@
+
+//header reesponsiveness 
+const toggle = document.getElementById('nav-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 // Simple smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
@@ -8,8 +16,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 // Navbar active link on scroll
 const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-links a');
-
 window.addEventListener('scroll', () => {
   let current = '';
   sections.forEach(section => {
