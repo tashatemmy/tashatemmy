@@ -1,109 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Passionate QA Engineer with expertise in manual & automation testing. Explore my test case samples, automation demos, and blog on software quality.">
-  <title>Temi Odey | QA Engineer </title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Temi Odey — QA Engineer. Portfolio: test cases, automation demos, RTMs, bug reports." />
+  <title>Temi Odey | QA Engineer</title>
 
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <h3>Temi-Odey</h3>
-    </div>
+  <!-- NAVBAR (shared across pages) -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">
+        <a href="index.html"><h3>Temi-Odey</h3></a>
+      </div>
 
-    <div class="nav-toggle" id="nav-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
 
-    <div class="nav-links" id="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="/portfolio.html">Portfolio</a>
-      <a href="/blog.html">Blog</a>
-      <a href="#contact">Contact</a>
-      <ul class="social-links">
-        <li>
-          <a href="https://www.linkedin.com/in/temi-odey/" target="_blank" aria-label="LinkedIn">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/tashatemmy/" target="_blank" aria-label="GitHub">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
 
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="profile-container">
-  <img src="./images/Temi.png" alt="Temi Odey - QA Engineer" class="profile-pic">
-</div>
-    <h1>Hi, I’m Temi Odey<br>Quality Assurance Engineer</h1>
-    <p>Detail-oriented and curious QA professional, ensuring software quality and seamless user experiences.</p>
-    <div class="hero-buttons">
-      <a href="#letter" class="buttons btn">Dear Future Employer,</a>
-    </div>
-    <div class="tools">
-    <div class="tool-icons">
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
-        <span class="tooltiptext">Java</span>
+        <ul class="social-links">
+          <li>
+    <a href="mailto:temiodey001@gmail.com" target="_blank" rel="noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" title="Email Me">
+    </a>
+  </li>
+          <li><a href="https://www.linkedin.com/in/temi-odey/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://github.com/tashatemmy/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a></li>
+        </ul>
       </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" />
-        <span class="tooltiptext">Selenium</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven" />
-        <span class="tooltiptext">Maven</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-        <span class="tooltiptext">Git</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-        <span class="tooltiptext">GitHub</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" />
-        <span class="tooltiptext">Jenkins</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Python" />
-        <span class="tooltiptext">Postman</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-        <span class="tooltiptext">HTML5</span>
-      </div>
-      <div class="tooltip">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-        <span class="tooltiptext">CSS3</span>
-      </div>
-    </div>
-  </div>
-</div>
+    </nav>
+  </header>
 
-  <!-- About Me Section -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>I’m Temi Odey, a motivated Software QA Engineer with hands-on experience in manual and automation testing. I’m passionate about ensuring that every product delivers a seamless and trustworthy user experience.<br>My journey into QA is fueled by curiosity, problem-solving, and continuous learning. With a background in psychology, I bring a unique perspective to testing—understanding not just how systems work, but also how real users think, behave, and interact with software. This allows me to design test cases and scenarios that go beyond the obvious, uncovering issues that others might overlook.
+  <!-- HERO -->
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <img src="./images/Temi.png" alt="Temi Odey" class="profile-pic">
+      </div>
 
-<p style="padding-top: 20px;"><b>🔹 What I Do Best</b></p>
+      <div class="hero-right">
+        <h1>Hi, I’m Temi Odey<br><span class="muted">Quality Assurance Engineer</span></h1>
+        <p class="lead">Detail-oriented and curious QA professional, ensuring software quality and seamless user experiences.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#letter">💌 Dear Future Employer</a>
+          <a class="btn ghost" href="portfolio.html">View Portfolio</a>
+        </div>
+
+        <div class="tools">
+          <h4>Tools I Work With</h4>
+          <div class="tool-icons">
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium"><span>Selenium</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven"><span>Maven</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"><span>Jenkins</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"><span>Postman</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
+            <div class="tool"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about container" id="about">
+      <h2>About Me</h2>
+      <p>I’m Temi Odey, a <b>proficient Software QA Engineer</b> with hands-on experience in <b>manual, automation and API testing</b>. I’m passionate about ensuring that every product delivers a seamless and trustworthy user experience.<br>My journey into QA is fueled by curiosity, problem-solving, and continuous learning. With a background in psychology, I bring a unique perspective to testing—understanding not just how systems work, but also how real users think, behave, and interact with software.This allows me to design test cases and scenarios that go beyond the obvious, uncovering issues that others might overlook. </p>
+      <p style="padding-top: 20px;"><b>🔹 What I Do Best</b></p>
 
 <p>Designing and executing structured test cases that reveal hidden issues<br>
 
@@ -114,89 +91,151 @@ Driving quality through defect reporting, regression testing, and exploratory te
 Embedding testing into CI/CD pipelines using Jenkins and GitHub for faster, more reliable delivery<br>
 
 Ensuring coverage with cross-browser and cross-device testing on BrowserStack</p>
+      <a class="btn secondary" href="about.html">More About Me</a>
+    </section>
 
+    <!-- PORTFOLIO PREVIEW (cards) -->
+    <!-- PORTFOLIO PREVIEW (animated carousel) -->
+<section class="portfolio-preview container" id="portfolio">
+  <h2>Portfolio Projects</h2>
+  
+  <div class="cards-carousel">
+    <div class="cards-track">
+      <article class="card">
+        <h3>✈️ MakeMyTrip Project</h3>
+        <p>A travel website QA project (test plan, test cases, test design techniques bug reports, automation demo and test summary report).</p>
+        <a class="btn small" href="portfolio.html#makemytrip">View Project</a>
+      </article>
 
-<p style="padding-top: 20px;"><b>🔹 My Edge</b></p>
+      <article class="card">
+        <h3>🟠 OrangeHRM Demo</h3>
+        <p>HRM demo web testing — manual Testing + automation demo and documentations.</p>
+        <a class="btn small" href="portfolio.html#orangehrm">View Project</a>
+      </article>
 
-<p>I combine attention to detail with a big-picture mindset. I don’t just test to find bugs—I test to help teams ship high-quality products with confidence. My approach is guided by “what if” thinking, exploring edge cases, and ensuring no scenario is left unchecked.</p>
+      <article class="card">
+        <h3>🧪 SauceDemo</h3>
+        <p>Automation-focused Test using Selenium + TestNG on a mock e-commerce site.</p>
+        <a class="btn small" href="portfolio.html#saucedemo">View Project</a>
+      </article>
 
-<p style="padding-top: 10px;"><b>🔹 My Journey</b></p>
+      <article class="card">
+        <h3>🤖 Salesforce</h3>
+        <p>Functional & automation QA for Salesforce flows and CI integration.</p>
+        <a class="btn small" href="portfolio.html#salesforce">View Project</a>
+      </article>
 
-<p>So far, I’ve worked on projects ranging from flight & hotel booking systems to automation demo frameworks, gaining real-world experience in applying QA principles that improve reliability and usability. Each project has strengthened my ability to adapt quickly, collaborate effectively, and deliver value to teams.</p>
+      <!-- Duplicate cards for smooth infinite scroll -->
+      <article class="card">
+        <h3>🧪 BlakSkills</h3>
+        <p>Group Manual Test project (test plan, test cases, bug reports and test summary report).</p>
+        <a class="btn small" href="portfolio.html#blakskill">View Project</a>
+      </article>
 
-<p style="padding-top: 10px;"><b>🔹 Looking Ahead</b></p>
-
-<p>I’m building my career in QA with a focus on automation, continuous testing, and agile collaboration. My goal is to grow into a role where I can mentor others, lead robust testing strategies, and contribute to innovative software teams.</p>
-    <a href="about.html" class="btn secondary">Learn More</a>
-  </section>
-
-
-  <!-- Portfolio Preview -->
-  <section class="portfolio" id="portfolio">
-    <h2>Portfolio Highlights</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>📝 Test Cases</h3>
-        <p>Delivering <b>precise, actionable test cases</b> that ensure software works flawlessly. </p>
-        <p>Explore my <b>manual and automation testing work </b>to see how I catch issues before they reach users.</p>
-        <a href="portfolio.html" target="_blank">See Full Portfolio</a>
-      </div>
-      <div class="card">
-        <h3>🐞 Bug Reports</h3>
-        <p>Detailed bug reports with screenshots & reproduction steps.</p>
-        <a href="portfolio.html" target="_blank">See Full Portfolio</a>
-      </div>
-      <div class="card">
-        <h3>📊 RTMs</h3>
-        <p>Requirement Traceability Matrices ensuring full coverage.</p>
-        <a href="portfolio.html" target="_blank">See Full Portfolio</a>
-      </div>
-      <div class="card">
-        <h3>🤖 Automation Demos</h3>
-        <p>Selenium/TestNG scripts in action with CI/CD integration.</p>
-        <video width="100%" controls>
-          <source src="videos/demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <a href="portfolio.html" target="_blank">See Full Portfolio</a>
-      </div>
+      <article class="card">
+        <h3>🟠 OrangeHRM Demo</h3>
+        <p>HRM demo web testing — manual Testing + automation demo and documentations.</p>
+        <a class="btn small" href="portfolio.html#orangehrm">View Project</a>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Blog Preview -->
-  <section class="blog" id="blog">
-    <h2>My QA Blog ✍️</h2>
-    <div class="posts">
-      <div class="post">
-        <h3>Why QA is More Than Bug Hunting</h3>
-        <p>QA ensures user trust, not just defect-free releases...</p>
-        <a href="blog.html">Read Full Blog</a>
+
+    <!-- BLOG PREVIEW -->
+    <section class="blog container" id="blog">
+  <h2>My QA Blog</h2>
+  <p class="blog-intro">
+    Inspired by my journey as a Software QA Engineer, I share tips, guides, and insights 
+    to make QA concepts simple and beginner-friendly. Learn, grow, and enjoy testing with me!
+  </p>
+
+  <div class="blog-posts">
+    <article class="post-card">
+      <div class="post-header header-gradient">
+        <h4>Selenium WebDriver Automation with Java: A Beginner's Guide</h4>
       </div>
-      <div class="post">
-        <h3>Automation vs Manual Testing</h3>
-        <p>Finding the right balance for efficient workflows...</p>
-        <a href="blog.html">Read Full Blog</a>
+      <div class="post-body">
+        <p>Just getting started with Quality Assurance and Automation Testing?<br> Learning Selenium WebDriver—especially with Java—can initially feel overwhelming. Trust me; I’ve been there! One of the biggest challenges is figuring out where to begin, and that’s precisely why I’ve put together this beginner-friendly guide.
+
+</p>
+        <a class="btn read-btn" href="blog.html">Read More</a>
       </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-header header-gradient">
+        <h4>How to Use JavaScript Executor in Selenium for Web Automation</h4>
+      </div>
+      <div class="post-body">
+        <p>When performing web automation tests using Selenium, we interact with web elements and execute various WebDriver methods, such as get("String") for navigating to URLs, click() for interacting with buttons and links, and sendKeys() for entering data. However, these actions may occasionally result in exceptions when running tests in Selenium.</p>
+        <a class="btn read-btn" href="blog.html">Read More</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <div class="post-header header-gradient">
+        <h4>How To Reference WebDriver in Page Object Models(POM classes) and Test Classes in Selenium</h4>
+      </div>
+      <div class="post-body">
+        <p>In automation Testing, structuring your project using the Page Object Model (POM) is one of the most effective ways to build a maintainable and scalable test framework.<br> A critical part of this structure is how you manage your WebDriver instance. <br> Improper initialization or reference of the WebDriver can lead to test failures, exceptions, or inconsistent test behavior.
+
+In this article, I’ll walk you through best practices for instantiating and referencing WebDriver across your POM classes and test classes, helping you build a reusable and clean Selenium framework.</p>
+        <a class="btn read-btn" href="blog.html">Read More</a>
+      </div>
+    </article>
+
+    <!-- Add more post-cards here -->
+  </div>
+</section>
+
+
+
+    <!-- LETTER (Dear Future Employer) -->
+    <section class="letter container" id="letter">
+      <h2>Dear Future Employer,</h2>
+      <p>I believe QA is more than finding bugs – it’s about enhancing user trust. With creativity, attention to detail, and technical precision, I ensure software not only works but delights users. I would be thrilled to bring my dedication and skills to your team.<br><br>
+      Yours sincerely,<br>
+       Temi Odey</p></p>
+    </section>
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    
+    <!-- About / Logo -->
+    <div class="footer-about">
+      <h3>Temi Odey</h3>
+      <p>Software QA Engineer | Passionate about automation, quality, and sharing knowledge through tech blogs.</p>
     </div>
-  </section>
 
-  <!-- Letter to Future Employer -->
-  <section class="letter" id="letter">
-    <h2>Letter to My Future Employer 💌</h2>
-    <p>Dear Future Employer,<br><br>
-       I believe QA is more than finding bugs – it’s about enhancing user trust. With creativity, attention to detail, and technical precision, I ensure software not only works but delights users. I would be thrilled to bring my dedication and skills to your team.<br><br>
-       Yours sincerely,<br>
-       Temi Odey</p>
-  </section>
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
 
-  <!-- Contact Section -->
-  <footer class="contact" id="contact">
-    <h2>Let’s Connect 🤝</h2>
-    <p>Email: <a href="mailto:your@email.com">temiodey001@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/temi-odey</a></p>
-    <p>GitHub: <a href="#">github.com/tashatemmy</a></p>
-    <p>&copy; 2025 Temi Odey</p>
-  </footer>
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Let’s Connect</h4>
+      <p>Email: <a href="mailto:temiodey001@gmail.com">temiodey001@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/temi-odey/" target="_blank" rel="noreferrer">linkedin.com/in/temi-odey</a></p>
+      <p>GitHub: <a href="https://github.com/tashatemmy/" target="_blank" rel="noreferrer">github.com/tashatemmy</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Temi Odey. Built with HTML, CSS & ❤️</p>
+  </div>
+</footer>
+
 
   <script src="script.js"></script>
 </body>

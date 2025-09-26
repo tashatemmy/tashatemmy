@@ -1,201 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Temi Odey QA Portfolio – test cases, bug reports, RTMs, test plans, automation demos.">
-  <title>Portfolio | Temi Odey</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Temi Odey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-        <h3>Temi-Odey</h3>
-        <!-- <p><b>..driven by curiosity, focused on quality..</b></p> -->
-    </div>
-    <div class="nav-links">
-        <a href="/index.html">Home</a>
-      <a href="#about">About</a>
-      <a href="/portfolio.html">Portfolio</a>
-      <a href="/blog.html">Blog</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <ul class="social-links">
-      <li>
-        <a href="https://www.linkedin.com/in/temi-odey/" target="_blank" aria-label="LinkedIn">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/tashatemmy/" target="_blank" aria-label="GitHub">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="brand">
+        <a href="index.html"><h3>Temi-Odey</h3></a>
+      </div>
 
-<!-- Portfolio Page Content -->
-<main class="portfolio-page">
-  <h1>My Professional Portfolio</h1>
-  <p class="intro">Explore my QA work — from structured test design to automation frameworks. Each category expands to reveal project samples, documentation, and reports.</p>
-
-  <div class="accordion-container">
-
-    <!-- Test Plans -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 📑 Test Plan
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
       </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>MakeMyTrip Travel Site Test Plan</p>
-            <a href="https://docs.google.com/document/d/1kq0lUnEchO4in9Uo_E_VYhAiws3Qa4ItLbOt-vFYIJQ/edit?tab=t.0#heading=h.5vdw8vxz7xol" target="_blank">View Document</a>
-          </div>
-          <div class="sample">
-            <p>OrangeHRM Demo Site Test Plan</p>
-            <a href="https://docs.google.com/document/d/1_1hY3EKmQGAx2zlmJxlJliz-UINwmQ3BbuSITXliiH4/edit?tab=t.0#heading=h.y3kqw15kgg4l" target="_blank">View Document</a>
-          </div>
-          <div class="sample">
-            <p>Blakskill Hiring Site Test Plan</p>
-            <a href="https://docs.google.com/document/d/1_1hY3EKmQGAx2zlmJxlJliz-UINwmQ3BbuSITXliiH4/edit?tab=t.0#heading=h.y3kqw15kgg4l" target="_blank">View Document</a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contact</a>
+
+        <ul class="social-links">
+          <li>
+    <a href="mailto:temiodey001@gmail.com" target="_blank" rel="noreferrer">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" title="Email Me">
+    </a>
+  </li>
+          <li><a href="https://www.linkedin.com/in/temi-odey/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a></li>
+          <li><a href="https://github.com/tashatemmy/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="portfolio-page container">
+    <h1>My QA Project Portfolio</h1>
+    <p class="intro">Explore detailed QA documentation, test assets, bug reports, and automation demos from my key projects.</p>
+
+    <!-- MakeMyTrip -->
+    <section id="makemytrip" class="project">
+      <h2>✈️ MakeMyTrip Travel Site</h2>
+      <p>A full QA project covering planning, test design, execution, and automation.</p>
+
+      <div class="accordion-container">
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📑 Test Plan</button>
+          <div class="accordion-content"><a href="https://docs.google.com/document/d/1kq0lUnEchO4in9Uo_E_VYhAiws3Qa4ItLbOt-vFYIJQ/edit?tab=t.0#heading=h.5vdw8vxz7xol" target="_blank">Open Test Plan</a></div>
+        </div>
+
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📝 Test Cases</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/13YrHYP88K2DE1zkTQo0TKhn4Vp-No0_MXYGlOzjdRaQ/edit?gid=1820225942#gid=1820225942" target="_blank">Open Test Cases</a></div>
+        </div>
+
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🐞 Bug Report</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/13YrHYP88K2DE1zkTQo0TKhn4Vp-No0_MXYGlOzjdRaQ/edit?gid=160664166#gid=160664166" target="_blank">Open Bug Report</a></div>
+        </div>
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📑 Test Summary Report</button>
+          <div class="accordion-content"><a href="https://docs.google.com/document/d/1kq0lUnEchO4in9Uo_E_VYhAiws3Qa4ItLbOt-vFYIJQ/edit?tab=t.lndx8pmf1fzt" target="_blank">Open Summary Report</a></div>
+        </div>
+
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🤖 Automation Demo</button>
+          <div class="accordion-content">
+            <iframe src="https://www.loom.com/embed/f0ff8aa3779742d0ad201b2424bb5928" title="MakeMyTrip demo" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Test Cases -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 📝 Test Cases
-      </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>MakeMyTrip Travel Site Test Cases</p>
-            <a href="https://docs.google.com/spreadsheets/d/13YrHYP88K2DE1zkTQo0TKhn4Vp-No0_MXYGlOzjdRaQ/edit?gid=1820225942#gid=1820225942" target="_blank">View PDF</a>
-          </div>
-          <div class="sample">
-            <p>Blakskills Hiring Site Test Cases</p>
-            <a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=0#gid=0" target="_blank">View PDF</a>
-          </div>
-          <div class="sample">
-            <p>OrangeHRM Demo Site Test Cases</p>
-            <a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=0#gid=0" target="_blank">View PDF</a>
+    <!-- OrangeHRM -->
+    <section id="orangehrm" class="project">
+      <h2>🟠 OrangeHRM Demo</h2>
+      <p>End-to-end QA on HRM features with automation demo.</p>
+
+      <div class="accordion-container">
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📑 Test Plan</button>
+          <div class="accordion-content"><a href="https://docs.google.com/document/d/1_1hY3EKmQGAx2zlmJxlJliz-UINwmQ3BbuSITXliiH4/edit?tab=t.0#heading=h.y3kqw15kgg4l" target="_blank">Open Test Plan</a></div>
+        </div>
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📝 Test Cases</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=0#gid=0" target="_blank">Open Test Cases</a></div>
+        </div>
+        <div class="accordion-container">
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🐞 Bug Report</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=1726781720#gid=1726781720" target="_blank">Open Bug Report</a></div>
+        </div>
+
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🤖 Automation Demo</button>
+          <div class="accordion-content">
+            <iframe src="https://www.loom.com/embed/f0ff8aa3779742d0ad201b2424bb5928" title="OrangeHRM demo" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Bug Reports -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 🐞 Bug Reports
-      </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>MakeMyTrip Travel Site Bug Report</p>
-            <a href="https://docs.google.com/spreadsheets/d/13YrHYP88K2DE1zkTQo0TKhn4Vp-No0_MXYGlOzjdRaQ/edit?gid=160664166#gid=160664166" target="_blank">View Report</a>
-          </div>
-          <div class="sample">
-            <p>Blakskills Hiring Site Bug Report</p>
-            <a href="https://docs.google.com/spreadsheets/d/1AdsIWBeCYUbyEPJ8gkDLHUns5hGL7FvGVn6UNbw91xo/edit?gid=0#gid=0" target="_blank">View Report</a>
+    <!-- Blakskill -->
+    <section id="blakskill" class="project">
+      <h2>🧪 BlakSkills</h2>
+      <p>Group Manual Test project (test plan, test cases, bug reports and test summary report)</p>
+
+      <div class="accordion-container">
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📑 Test Plan</button>
+          <div class="accordion-content"><a href="https://docs.google.com/document/d/1_1hY3EKmQGAx2zlmJxlJliz-UINwmQ3BbuSITXliiH4/edit?tab=t.0#heading=h.y3kqw15kgg4l" target="_blank">Open Test Plan</a></div>
+        </div>
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 📝 Test Cases</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=0#gid=0" target="_blank">Open Test Cases</a></div>
+        </div>
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🐞 Bug Report</button>
+          <div class="accordion-content"><a href="https://docs.google.com/spreadsheets/d/1AdsIWBeCYUbyEPJ8gkDLHUns5hGL7FvGVn6UNbw91xo/edit?gid=0#gid=0" target="_blank">Open Bug Report</a></div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <!-- SauceDemo -->
+    <section id="saucedemo" class="project">
+      <h2>🧪 SauceDemo</h2>
+      <p>Automation demo for a mock e-commerce site using Selenium + TestNG.</p>
+
+      <div class="accordion-container">
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🤖 Automation Demo</button>
+          <div class="accordion-content">
+            <iframe src="https://www.loom.com/embed/c3615c4d91eb49b6879690663f3805d2" title="SauceDemo demo" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Test Design Techniques -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 🎯 RTMs And Test Design Techniques
-      </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>MakeMyTrip BlackBox Technique</p>
-            <a href="https://docs.google.com/spreadsheets/d/13YrHYP88K2DE1zkTQo0TKhn4Vp-No0_MXYGlOzjdRaQ/edit?gid=0#gid=0" target="_blank">View PDF</a>
-          </div>
-          <div class="sample">
-            <p>OrangeHRM RTM</p>
-            <a href="https://docs.google.com/spreadsheets/d/1dwBHbiGYgDApUQoYBuouFozSGUNvgFr6dysGBWzjioI/edit?gid=1691341172#gid=1691341172" target="_blank">View PDF</a>
+    <!-- Salesforce -->
+    <section id="salesforce" class="project">
+      <h2>🤖 Salesforce</h2>
+      <p>Functional & automation QA for Salesforce flows and pipeline integration.</p>
+
+        <div class="category">
+          <button class="accordion-btn"><span class="accordion-icon">+</span> 🤖 Automation Demo</button>
+          <div class="accordion-content">
+            <iframe src="https://www.loom.com/embed/35b54a7a4bd84c1a8d93651a4b742190" title="Salesforce demo" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    
+    <!-- About / Logo -->
+    <div class="footer-about">
+      <h3>Temi Odey</h3>
+      <p>Software QA Engineer | Passionate about automation, quality, and sharing knowledge through tech blogs.</p>
     </div>
 
-    <!-- Test Summary Reports -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 📊 Test Summary Reports
-      </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>MakeMyTrip Travel Site Test Summary Report</p>
-            <a href="https://docs.google.com/document/d/1kq0lUnEchO4in9Uo_E_VYhAiws3Qa4ItLbOt-vFYIJQ/edit?tab=t.lndx8pmf1fzt" target="_blank">View PDF</a>
-          </div>
-          <div class="sample">
-            <p>OrangeHRM Demo Project Test Summary</p>
-            <a href="https://docs.google.com/document/d/1_1hY3EKmQGAx2zlmJxlJliz-UINwmQ3BbuSITXliiH4/edit?tab=t.55nudbhvg2qv#heading=h.p814bskjz12k" target="_blank">View PDF</a>
-          </div>
-        </div>
-      </div>
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html#portfolio">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
     </div>
 
-    <!-- Automation Demo Videos -->
-    <div class="category">
-      <button class="accordion-btn">
-        <span class="accordion-icon">+</span> 🤖 Automation Demo Videos
-      </button>
-      <div class="accordion-content">
-        <div class="samples">
-          <div class="sample">
-            <p>SauceDemo Automation Demonstration (Selenium + TestNG)</p>
-            <iframe src="https://www.loom.com/embed/c3615c4d91eb49b6879690663f3805d2" 
-          frameborder="0" 
-          webkitallowfullscreen 
-          mozallowfullscreen 
-          allowfullscreen
-          style="width:100%; height:360px;">
-            </iframe>
-          </div>
-          <div class="sample">
-            <p>MakeMyTrip Travel Site Automation Demonstration</p>
-            <iframe src="https://www.loom.com/embed/f0ff8aa3779742d0ad201b2424bb5928" 
-          frameborder="0" 
-          webkitallowfullscreen 
-          mozallowfullscreen 
-          allowfullscreen
-          style="width:100%; height:360px;">
-            </iframe>
-          </div>
-          <div class="sample">
-            <p>Salesforce Automation Demonstration</p>
-            <iframe src="https://www.loom.com/embed/35b54a7a4bd84c1a8d93651a4b742190" 
-          frameborder="0" 
-          webkitallowfullscreen 
-          mozallowfullscreen 
-          allowfullscreen
-          style="width:100%; height:360px;">
-            </iframe>
-          </div>
-        </div>
-      </div>
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Let’s Connect</h4>
+      <p>Email: <a href="mailto:temiodey001@gmail.com">temiodey001@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/temi-odey/" target="_blank" rel="noreferrer">linkedin.com/in/temi-odey</a></p>
+      <p>GitHub: <a href="https://github.com/tashatemmy/" target="_blank" rel="noreferrer">github.com/tashatemmy</a></p>
     </div>
 
   </div>
-</main>
 
-<footer class="contact">
-  <p>&copy; 2025 Temi Odey. All Rights Reserved.</p>
+  <div class="footer-bottom">
+    <p>© 2025 Temi Odey. Built with HTML, CSS & ❤️</p>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
