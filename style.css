@@ -738,3 +738,56 @@ code {
   .hero-left { order:-1; }
   .tool { width:72px; }
 }
+/* -------------------------
+   HERO MOBILE FIXES
+------------------------- */
+@media (max-width: 768px) {
+  .tools .tool-icons {
+    justify-content: center; /* center icons */
+    gap: 10px; /* reduce spacing */
+  }
+
+  .tool {
+    width: 60px; /* smaller icons for mobile */
+    gap: 4px;
+  }
+
+  .tool img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* -------------------------
+   ABOUT SECTION MOBILE FIXES
+------------------------- */
+@media (max-width: 768px) {
+  .about-content .btn {
+    font-size: 1rem; /* make button text readable */
+    padding: 12px 20px;
+  }
+
+  .about-container {
+    gap: 20px;
+  }
+
+  .about-img img {
+    max-width: 220px; /* reduce image size */
+    height: auto;
+  }
+
+  .about-content {
+    font-size: 1rem; /* make text more readable */
+  }
+}
+
+/* OPTIONAL: fine-tune hero text scaling */
+@media (max-width: 480px) {
+  .hero-right h1 {
+    font-size: 1.6rem;
+  }
+  .hero-right .lead {
+    font-size: 0.95rem;
+  }
+}
+
