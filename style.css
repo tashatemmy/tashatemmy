@@ -287,7 +287,9 @@ section.visible {
 .project { background:#fff; padding:18px; margin:18px 0; border-radius:10px; box-shadow:0 6px 18px rgba(20,30,60,0.04); }
 .project h2 { margin-bottom:8px; }
 .intro {
-  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* ACCORDION */
