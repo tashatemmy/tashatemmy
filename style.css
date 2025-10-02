@@ -119,16 +119,49 @@ body {
 .hero-right { animation-delay: 0.6s; }
 
 /* TOOLS */
-.tools { margin-top:6px; }
-.tools h4 { color:#fff; margin-bottom:8px; font-size:0.95rem; }
-.tool-icons { display:flex; flex-wrap:wrap; gap:12px; }
-.tool { display:flex; flex-direction:column; align-items:center; gap:6px; width:72px; text-align:center; }
-.tool img { width:46px; height:46px; border-radius:8px; background:rgba(255,255,255,0.08); padding:6px; transition: transform 0.28s ease, filter 0.28s ease;
-} 
+/* Tools Section Styling */
+.tools {
+  padding: 30px 0;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.tools h4 {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 16px;
+}
+
+.tool-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 72px;
+  text-align: center;
+}
+
+.tool img {
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  padding: 6px;
+  transition: transform 0.28s ease, filter 0.28s ease;
+}
+
 .tool img:hover {
   transform: rotate(10deg) scale(1.15);
   filter: brightness(1.1);
 }
+
 
 
 /* -------------------------
@@ -257,33 +290,84 @@ section.visible {
 }
 
 /* ACCORDION */
-.accordion-container { margin-top:12px; }
-.category { margin-bottom:10px; }
+/* Accordion Buttons */
 .accordion-btn {
-  width:100%; display:flex; justify-content:space-between; align-items:center;
-  padding:12px 14px; background: var(--primary); color:#fff; border:0; border-radius:8px; cursor:pointer; font-weight:700;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #fff; /* match container */
+  color: #000;      /* text black */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s;
 }
-.accordion-btn:hover { background: var(--primary-2); }
-.accordion-icon { font-size:18px; margin-left:10px; }
 
-.accordion-content {
-  max-height:0; overflow:hidden; transition: max-height 0.36s ease, padding 0.32s ease;
-  background:#fafafa; border-left:4px solid var(--primary); padding:0 14px; border-radius:0 0 8px 8px;
-  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.4s ease;
-  opacity: 0;
+.accordion-btn:hover {
+  background: var(--primary);
+  color: #fff;
 }
-.accordion-content.open { padding:10px 14px 18px 14px;}
 
+/* Icon on right */
 .accordion-icon {
-  display:inline-block;
+  font-size: 18px;
+  margin-left: auto; /* push icon to the right */
   transition: transform 0.3s ease;
 }
-.accordion-btn.active .accordion-icon {
-  transform: rotate(180deg);
+
+/* Accordion Content */
+/* Accordion Buttons */
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff; /* same as card */
+  color: #000; /* black text */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.3s, color 0.3s;
 }
+
+.accordion-btn:hover {
+  background: var(--primary-2); /* subtle hover */
+  color: #000;
+}
+
+/* Text left, icon right */
+.accordion-btn span:first-child {
+  margin-right: auto; /* push text to the left */
+}
+
+.accordion-icon {
+  font-size: 18px;
+  margin-left: auto; /* push icon to the far right */
+  transition: transform 0.3s ease;
+}
+
+/* Accordion Content */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.36s ease, padding 0.32s ease, opacity 0.4s ease;
+  background: #fafafa;
+  border-left: 4px solid var(--primary);
+  padding: 0 16px;
+  border-radius: 0 0 8px 8px;
+  opacity: 0;
+}
+
 .accordion-content.open {
+  padding: 12px 16px 30px 16px; /* enough space for readability */
   opacity: 1;
 }
+
+
 
 /* About Page */
 .about p {
@@ -663,8 +747,7 @@ code {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+  justify-content: center;
   max-width: var(--container);
   margin: 0 auto 20px auto;
 }
